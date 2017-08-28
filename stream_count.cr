@@ -22,7 +22,7 @@ class StreamCount
     lines = 0
     output(bytes: bytes, lines: lines, throttle: false)
     while (@io.read(slice: @slice) > 0)
-      STDOUT.print(@slice)
+      STDOUT.write(@slice)
       bytes += @slice.size
       @slice.each do |c|
         if c == 0x0A 
