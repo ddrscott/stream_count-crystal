@@ -17,7 +17,7 @@ class StreamCount
 
   # Do the work
   def run
-    total_bytes = 0.to_i64
+    total_bytes = 0.to_u64
     read_bytes = 0
     lines = 0
     output(bytes: total_bytes, lines: lines)
